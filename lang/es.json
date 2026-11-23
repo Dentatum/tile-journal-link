@@ -1,0 +1,45 @@
+{
+  "TJL": {
+    "Tab": "Enlace a Journal",
+    "MainLegend": "Enlace a Journal",
+    "EnableLink": "Activar enlace a Journal",
+    "PageUUID": "UUID de la página de Journal",
+    "DragPageHint": "Arrastra aquí una página de Journal",
+    "UUIDHint": "Arrastra una página desde el directorio de Journal Entries o pega su UUID.",
+    "HoverTitleLegend": "Título al pasar el ratón",
+    "ShowTitle": "Mostrar título",
+    "TitleText": "Texto",
+    "TitlePlaceholder": "Vacío = nombre de la Tile",
+    "Position": "Posición",
+    "GlowLegend": "Halo luminoso",
+    "EnableGlow": "Activar halo al pasar el ratón",
+    "Color": "Color",
+    "GlowWidth": "Anchura (padding)",
+    "GlowStrength": "Intensidad",
+    "Warn": {
+      "PageNotFound": "No se encontró la página de Journal indicada.",
+      "InvalidUUID": "El UUID de Journal no es válido.",
+      "InvalidDocument": "El UUID no corresponde a una entrada o página de Journal.",
+      "GlowUnavailable": "No se puede aplicar el halo: activa Token Magic FX o instala una versión de PIXI que incluya GlowFilter.",
+      "NoJournalPermission": "No tienes permisos para consultar este Journal."
+    },
+    "Log": {
+      "Initialized": "Inicializado"
+    },
+    "SaveTile": "Actualizar baldosa",
+    "DropUnsupported": "No se ha podido reconocer la página arrastrada. Copia y pega su UUID.",
+    "DropSuccess": "UUID de Journal enlazado correctamente.",
+    "SaveError": "No se pudo actualizar la baldosa. Revisa la consola para más detalles.",
+    "UpdateTile": "Actualizar baldosa",
+    "TitleFontSize": "Tamaño de fuente (px)",
+    "TitleFontFamily": "Tipo de fuente",
+    "TitleColor": "Color de fuente",
+    "PositionOptions": {
+      "Top": "Arriba",
+      "Bottom": "Abajo",
+      "Left": "Izquierda",
+      "Right": "Derecha",
+      "Center": "Centro"
+    }
+  }
+}

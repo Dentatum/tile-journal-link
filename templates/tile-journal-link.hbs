@@ -1,0 +1,87 @@
+<section class="tab tj-config {{tabs.tile-journal-link.cssClass}}" data-group="sheet" data-tab="tile-journal-link">
+  <fieldset class="tj-main">
+    <legend>{{localize "TJL.MainLegend"}}</legend>
+    <div class="form-group">
+      <label for="tjl-enabled">{{localize "TJL.EnableLink"}}</label>
+      <div class="form-fields">
+        <input id="tjl-enabled" type="checkbox" name="flags.tile-journal-link.config.enabled" {{checked tjl.enabled}}>
+      </div>
+    </div>
+    <div class="form-group tjl-uuid-drop-zone">
+      <label for="tjl-journal-uuid">{{localize "TJL.PageUUID"}}</label>
+      <div class="form-fields">
+        <input id="tjl-journal-uuid" type="text" name="flags.tile-journal-link.config.journalUuid" value="{{tjl.journalUuid}}" placeholder="{{localize 'TJL.DragPageHint'}}">
+      </div>
+      <p class="hint">{{localize "TJL.UUIDHint"}}</p>
+    </div>
+  </fieldset>
+
+  <div class="tj-optional">
+    <fieldset>
+      <legend>{{localize "TJL.HoverTitleLegend"}}</legend>
+      <div class="form-group">
+        <label for="tjl-title-enabled">{{localize "TJL.ShowTitle"}}</label>
+        <div class="form-fields"><input id="tjl-title-enabled" type="checkbox" name="flags.tile-journal-link.config.titleEnabled" {{checked tjl.titleEnabled}}></div>
+      </div>
+      <div class="form-group">
+        <label for="tjl-title">{{localize "TJL.TitleText"}}</label>
+        <div class="form-fields"><input id="tjl-title" type="text" name="flags.tile-journal-link.config.title" value="{{tjl.title}}" placeholder="{{localize 'TJL.TitlePlaceholder'}}"></div>
+      </div>
+      <div class="form-group">
+        <label for="tjl-title-font-size-slider">{{localize "TJL.TitleFontSize"}}</label>
+        <div class="form-fields tjl-font-size-control">
+          <input id="tjl-title-font-size-slider" type="range" min="6" max="96" step="1" value="{{tjl.titleFontSize}}" aria-label="{{localize 'TJL.TitleFontSize'}}">
+          <input id="tjl-title-font-size" type="number" name="flags.tile-journal-link.config.titleFontSize" min="6" max="96" step="1" value="{{tjl.titleFontSize}}" aria-label="{{localize 'TJL.TitleFontSize'}}">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tjl-title-font-family">{{localize "TJL.TitleFontFamily"}}</label>
+        <div class="form-fields">
+          <select id="tjl-title-font-family" name="flags.tile-journal-link.config.titleFontFamily">
+            {{#each tjl.fontChoices as |font|}}
+              <option value="{{font.value}}" {{#if (eq ../tjl.titleFontFamily font.value)}}selected{{/if}}>{{font.label}}</option>
+            {{/each}}
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tjl-title-color">{{localize "TJL.TitleColor"}}</label>
+        <div class="form-fields">
+          <input id="tjl-title-color" type="color" name="flags.tile-journal-link.config.titleColor" value="{{tjl.titleColor}}">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tjl-title-position">{{localize "TJL.Position"}}</label>
+        <div class="form-fields">
+          <select id="tjl-title-position" name="flags.tile-journal-link.config.titlePosition">
+            <option value="top" {{#if (eq tjl.titlePosition "top")}}selected{{/if}}>{{localize "TJL.PositionOptions.Top"}}</option>
+            <option value="bottom" {{#if (eq tjl.titlePosition "bottom")}}selected{{/if}}>{{localize "TJL.PositionOptions.Bottom"}}</option>
+            <option value="left" {{#if (eq tjl.titlePosition "left")}}selected{{/if}}>{{localize "TJL.PositionOptions.Left"}}</option>
+            <option value="right" {{#if (eq tjl.titlePosition "right")}}selected{{/if}}>{{localize "TJL.PositionOptions.Right"}}</option>
+            <option value="center" {{#if (eq tjl.titlePosition "center")}}selected{{/if}}>{{localize "TJL.PositionOptions.Center"}}</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>{{localize "TJL.GlowLegend"}}</legend>
+      <div class="form-group">
+        <label for="tjl-glow-enabled">{{localize "TJL.EnableGlow"}}</label>
+        <div class="form-fields"><input id="tjl-glow-enabled" type="checkbox" name="flags.tile-journal-link.config.glowEnabled" {{checked tjl.glowEnabled}}></div>
+      </div>
+      <div class="form-group">
+        <label for="tjl-glow-color">{{localize "TJL.Color"}}</label>
+        <div class="form-fields"><input id="tjl-glow-color" type="color" name="flags.tile-journal-link.config.glowColor" value="{{tjl.glowColor}}"></div>
+      </div>
+      <div class="form-group">
+        <label for="tjl-glow-width">{{localize "TJL.GlowWidth"}}</label>
+        <div class="form-fields"><input id="tjl-glow-width" type="number" name="flags.tile-journal-link.config.glowWidth" min="0" max="50" step="1" value="{{tjl.glowWidth}}"></div>
+      </div>
+      <div class="form-group">
+        <label for="tjl-glow-strength">{{localize "TJL.GlowStrength"}}</label>
+        <div class="form-fields"><input id="tjl-glow-strength" type="number" name="flags.tile-journal-link.config.glowStrength" min="0.1" max="20" step="0.1" value="{{tjl.glowStrength}}"></div>
+      </div>
+    </fieldset>
+  </div>
+
+</section>
