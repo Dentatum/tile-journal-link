@@ -1,5 +1,5 @@
 # Tile Journal Link (Foundry VTT 14.369)
-This module turns scene Tiles into interactive links to Journal Entries or individual Journal pages. It allows you to represent different locations on an interactive map using Tiles, providing a richer visual presentation than Journal Notes.
+This module turns scene Tiles into links to Journal Entries or individual Journal pages. It allows you to represent different locations on an interactive map using Tiles, providing a richer visual presentation than Journal Notes. It is useful when you are trying to populate a scene with visible points of interest and you need a module lighter and simpler than Monk's ATT.
 
 The module also offers optional hover effects that make linked Tiles easier to recognize during play, including a customizable title and a glowing effect.
 
@@ -15,4 +15,4 @@ The module also offers optional hover effects that make linked Tiles easier to r
 - If the title text is empty, the Tile's name is used.
 
 ## Compatibilities
-This module has been tested with **Token Magic FX** and **Monk's Active Tile Triggers**.
+This module is compatible with **Token Magic FX** and **Monk's Active Tile Triggers**.
