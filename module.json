@@ -1,7 +1,7 @@
 {
   "id": "tile-journal-link",
   "title": "Tile Journal Link",
-  "description": "Convierte Tiles en enlaces a páginas de Journal con título emergente y halo configurable.",
+  "description": "Treats tiles as journal links with configurable text and halo.",
   "version": "1.0.14",
   "authors": [
     {
@@ -30,7 +30,7 @@
       "path": "lang/en.json"
     }
   ],
-  "manifest": "https://raw.githubusercontent.com/Dentatum/active-effects-hud/refs/heads/main/module.json",
-  "url": "https://github.com/Dentatum/active-effects-hud",
-  "download": "https://github.com/Dentatum/active-effects-hud/archive/refs/heads/main.zip"
+  "manifest": "https://raw.githubusercontent.com/Dentatum/tile-journal-link/refs/heads/main/module.json",
+  "url": "https://github.com/Dentatum/tile-journal-link",
+  "download": "https://github.com/Dentatum/tile-journal-link/archive/refs/heads/main.zip"
 }
