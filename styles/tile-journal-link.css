@@ -1,0 +1,63 @@
+/* Tile Journal Link - Foundry VTT 14 */
+.tj-config {
+  display: none !important;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+.tj-config.active {
+  display: flex !important;
+}
+.tj-config fieldset {
+  margin: 0 0 1rem;
+}
+.tj-config .form-group {
+  position: relative;
+}
+.tj-config .hint {
+  flex: 0 0 100%;
+  margin: 0.25rem 0 0;
+  color: var(--color-text-dark-secondary);
+  font-size: 0.8rem;
+}
+.tj-config .tj-optional { display: none !important; }
+.tj-config:has(#tjl-enabled:checked) .tj-optional {
+  display: block !important;
+}
+.tj-config #tjl-journal-uuid {
+  min-width: 0;
+}
+.tj-config .tjl-uuid-drop-zone:has(#tjl-journal-uuid):hover #tjl-journal-uuid,
+.tj-config #tjl-journal-uuid:focus {
+  border-color: var(--color-border-highlight);
+}
+
+.tjl-hover-title {
+  user-select: none;
+}
+
+.tjl-hover-title {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+  white-space: pre-wrap;
+  user-select: none;
+}
+
+.tj-config .tjl-font-size-control {
+  display: grid;
+  grid-template-columns: minmax(90px, 1fr) 5.5rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+.tj-config #tjl-title-font-size-slider {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+.tj-config #tjl-title-font-size {
+  width: 100%;
+  min-width: 0;
+  text-align: center;
+}

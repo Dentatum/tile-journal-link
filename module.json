@@ -1,0 +1,36 @@
+{
+  "id": "tile-journal-link",
+  "title": "Tile Journal Link",
+  "description": "Treats tiles as journal links with configurable text and halo.",
+  "version": "1.0.15",
+  "authors": [
+    {
+      "name": "Dentatum"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.370"
+  },
+  "esmodules": [
+    "scripts/tile-journal-link.js"
+  ],
+  "styles": [
+    "styles/tile-journal-link.css"
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español (España)",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "manifest": "https://raw.githubusercontent.com/Dentatum/tile-journal-link/refs/heads/main/module.json",
+  "url": "https://github.com/Dentatum/tile-journal-link",
+  "download": "https://github.com/Dentatum/tile-journal-link/archive/refs/heads/main.zip"
+}

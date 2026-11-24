@@ -1,0 +1,45 @@
+{
+  "TJL": {
+    "Tab": "Journal Link",
+    "MainLegend": "Journal Link",
+    "EnableLink": "Enable Journal link",
+    "PageUUID": "Journal page UUID",
+    "DragPageHint": "Drop a Journal page here",
+    "UUIDHint": "Drag a page from the Journal Entries directory or paste its UUID.",
+    "HoverTitleLegend": "Hover title",
+    "ShowTitle": "Show title",
+    "TitleText": "Text",
+    "TitlePlaceholder": "Empty = Tile name",
+    "Position": "Position",
+    "GlowLegend": "Glow effect",
+    "EnableGlow": "Enable glow on hover",
+    "Color": "Color",
+    "GlowWidth": "Width (padding)",
+    "GlowStrength": "Strength",
+    "Warn": {
+      "PageNotFound": "The specified Journal page could not be found.",
+      "InvalidUUID": "The Journal UUID is invalid.",
+      "InvalidDocument": "The UUID does not refer to a Journal Entry or Journal page.",
+      "GlowUnavailable": "The glow could not be applied: enable Token Magic FX or use a PIXI build that includes GlowFilter.",
+      "NoJournalPermission": "You do not have permission to view this Journal."
+    },
+    "Log": {
+      "Initialized": "Initialized"
+    },
+    "SaveTile": "Update Tile",
+    "DropUnsupported": "The dropped Journal page could not be recognized. Copy and paste its UUID instead.",
+    "DropSuccess": "Journal UUID linked successfully.",
+    "SaveError": "The Tile could not be updated. Check the console for details.",
+    "UpdateTile": "Update Tile",
+    "TitleFontSize": "Font size (px)",
+    "TitleFontFamily": "Font family",
+    "TitleColor": "Font color",
+    "PositionOptions": {
+      "Top": "Top",
+      "Bottom": "Bottom",
+      "Left": "Left",
+      "Right": "Right",
+      "Center": "Center"
+    }
+  }
+}
